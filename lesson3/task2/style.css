@@ -1,0 +1,37 @@
+#myid {
+	color: red;
+}
+
+.myclass {
+	color: blue;
+}
+
+#myid2.myclass {
+	font-weight: bold;
+}
+
+.myclass.mysuperclass {
+	text-decoration: underline;
+}
+
+#myid3.myclass.mysuperclass {
+	font-style: italic;
+}
+/*Селектор атрибута*/
+div[id]{} /*выбери все див у которых есть ID*/
+
+div[class="myclass mysuperclass"]{} /*выбери все див у которых класс равен "..."*/
+
+div[id][class="myclass mysuperclass"]{} /*несколько атрибутов*/
+
+div[id][class~="myclass"]{} /*не строгое соответствие, в атрибуте класс одно из значений равно myclass*/
+
+div[id][class*="class"]{} /*значение атрибута содержит class*/
+
+/*Селектор потомка*/
+
+
+
+
+Еще /*проверяет и тип элемента и ведет отсчет по элементам одного типа*/
+.parent p:nth-of-type(2n+1){}
